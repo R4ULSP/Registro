@@ -7,19 +7,27 @@
     android:background="@color/teal_100"
     tools:context=".MainActivity">
 
-    <!-- TODO: ALINEAR EL ICONO -->
-<androidx.appcompat.widget.AppCompatImageView
-    android:id="@+id/avatar_img"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:foreground="@drawable/ic_baseline_add_a_photo_24"
-    android:foregroundTint="@color/white"
-    android:foregroundGravity="bottom"
-    android:src="@drawable/img_registro"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar_img_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_add_a_photo_24"
+        android:tint="@color/white"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_img" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_name"

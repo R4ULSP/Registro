@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setListeners() {
-        binding.avatarImg.setOnClickListener(this);
+        binding.avatarImgSelector.setOnClickListener(this);
         binding.viewConditions.setOnClickListener(this);
         binding.btnJoin.setOnClickListener(this);
         binding.inputAge.setOnItemClickListener(this);
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(!binding.inputLastname.getText().toString().equals("") && !binding.inputLayoutLastname.isErrorEnabled()){
             lastnameValidation = true;
         }
-        if(!binding.inputLayoutAge.isErrorEnabled()){
+        if(!binding.inputAge.getText().toString().equals("") && !binding.inputLayoutAge.isErrorEnabled()){
             ageValidation = true;
         }
 
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent intent;
-        if (view.equals(binding.avatarImg)) {
+        if (view.equals(binding.avatarImgSelector)) {
             intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             startActivity(intent);
         } else if (view.equals(binding.viewConditions)) {
