@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:src="@drawable/img_registro"
+        app:srcCompat="@drawable/img_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:src="@drawable/ic_baseline_add_a_photo_24"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24"
         android:tint="@color/white"
         android:layout_marginBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +34,6 @@
         style="@style/registry_text_inputs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/avatar_img">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -51,8 +49,6 @@
         style="@style/registry_text_inputs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_layout_name">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -71,8 +67,6 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="30dp"
         app:boxBackgroundColor="@color/grey_100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_Layout_lastname">
 
         <AutoCompleteTextView
@@ -97,8 +91,6 @@
         android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/privacy_policy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_layout_age"
         app:layout_constraintVertical_bias="1.0" />
 
